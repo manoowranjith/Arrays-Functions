@@ -1,7 +1,9 @@
-const express = require('express');
-const app = express();
-const port = 8081;
-
-//app.use('/static', express.static('public'))
-app.use(express.static('public'))
-app.listen(port, () => console.log(`listening on port ${port}!`));
+const express=require('express')
+const app=express()
+app.listen(8081,()=>{
+    console.log("Port listening @ 8081");
+})
+app.use(express.static('public'));
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+'/index.html')
+})
