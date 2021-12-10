@@ -121,16 +121,16 @@ describe('1. Finding greatest number',()=>{
         
     ]; 
       expect(typeof uniqueArrays).toBe('function');
-      // expect(uniqueArrays(items)).toBe([
-      //   'bread',
-      //   'jam',
-      //   'milk',
-      //   'oil',
-      //   'rice',
-      //   'coffee powder',
-      //   'sugar',
-      //   'salt'
-      // ])
+       expect(uniqueArrays(items)).toEqual([
+         'bread',
+         'jam',
+         'milk',
+         'oil',
+         'rice',
+         'coffee powder',
+         'sugar',
+         'salt'
+       ])
     })
   
   })
